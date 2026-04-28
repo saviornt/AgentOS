@@ -2,8 +2,6 @@
 
 AgentEx is a **Codex plugin-based agent orchestration layer** that provides structured **skills, MCP tool integrations, and application connectors** for agentic workflows across development, research, and personal automation.
 
-It is not a standalone operating system. Instead, it extends Codex with a modular execution environment for tools, workflows, and persistent agent behavior.
-
 ---
 
 ## Overview
