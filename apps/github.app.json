@@ -1,0 +1,9 @@
+{
+  "name": "github",
+  "auth": "oauth",
+  "permissions": [
+    "repo",
+    "pull_requests",
+    "issues"
+  ]
+}

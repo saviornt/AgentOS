@@ -1,0 +1,78 @@
+{
+  "mcpServers": {
+    "filesystem": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-filesystem", "."]
+    },
+
+    "memory": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-memory"]
+    },
+
+    "searxng": {
+      "command": "npx",
+      "args": ["-y", "mcp-searxng"],
+      "env": {
+        "SEARXNG_URL": "http://localhost:8081"
+      }
+    },
+
+    "cargo": {
+      "command": "python",
+      "args": ["./mcp/cargo_server.py"]
+    },
+
+    "npm": {
+      "command": "python",
+      "args": ["./mcp/npm_server.py"]
+    },
+
+    "uv": {
+      "command": "python",
+      "args": ["./mcp/uv_server.py"]
+    },
+
+    "obsidian-agent": {
+      "command": "python",
+      "args": [
+        "./mcp/obsidian_agent_server.py"
+      ],
+      "env": {
+        "AGENTOS_VAULT_PATH": ""
+      }
+    },
+
+    "redis-agent": {
+      "command": "python",
+      "args": [
+        "./mcp/redis_memory_server.py"
+      ],
+      "env": {
+        "REDIS_URL": "redis://localhost:6379"
+      }
+    },
+
+    "mongo-agent": {
+      "command": "python",
+      "args": [
+        "./mcp/mongo_memory_server.py"
+      ],
+      "env": {
+        "MONGO_URI": "mongodb://localhost:27017",
+        "MONGO_DB": "agentos"
+      }
+    },
+
+    "ue5-agent": {
+      "command": "python",
+      "args": [
+        "./mcp/ue5_server.py"
+      ],
+      "env": {
+        "UE_ENGINE_ROOT": "C:/Program Files/Epic Games/UE_5.7",
+        "UE_PROJECT_ROOT": ""
+      }
+    }
+  }
+}

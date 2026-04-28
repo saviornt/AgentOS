@@ -1,0 +1,21 @@
+{
+  "name": "agentos",
+  "version": "0.1.0",
+  "description": "AgentOS - local-first Codex agent orchestrator",
+
+  "skills": [
+    "skills/agent-orchestrator.md",
+    "skills/dev-cycle.md",
+    "skills/feature-builder.md",
+    "skills/researcher.md"
+  ],
+
+  "mcp": "./mcp.json",
+
+  "apps": [
+    "apps/github.app.json",
+    "apps/google-drive.app.json"
+  ],
+
+  "routing": "./routing/skill_router.yaml"
+}

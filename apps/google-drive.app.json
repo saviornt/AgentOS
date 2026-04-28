@@ -1,0 +1,8 @@
+{
+  "name": "google-drive",
+  "auth": "oauth",
+  "permissions": [
+    "read",
+    "write"
+  ]
+}

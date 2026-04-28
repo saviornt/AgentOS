@@ -1,0 +1,16 @@
+rules:
+
+  - match: ["cargo", "rust", "build", "test"]
+    skill: agent-orchestrator
+
+  - match: ["npm", "node", "frontend", "vite", "react"]
+    skill: agent-orchestrator
+
+  - match: ["python", "uv", "pip"]
+    skill: agent-orchestrator
+
+  - match: ["research", "search", "find"]
+    skill: researcher
+
+  - match: ["feature", "implement", "add"]
+    skill: feature-builder
